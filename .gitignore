@@ -1,5 +1,6 @@
 *.exe
 *.pak
+*.db
 fteqcc.ini
 sound/
 gfx/
