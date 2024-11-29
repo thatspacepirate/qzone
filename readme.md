@@ -1,9 +1,14 @@
 ![alt text](media/qzone.png)
+
 # QZONE FGD PROJECT
+---
+
 An attempt to create an FGD entity definition file for Qzone, a quake expansion sold in the 90s by the now defunct WizardWorks Group, Inc. This expansion adds new enemies and weapon replacements to the original Quake. I'm working on this project so that modders can create maps for the mod, and to make it easier for the entities unique to Qzone to be used in other mods.
 
+Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more details about the mod.
+
 ## TO DO:
-### ☐ Add new enemies to [qzone.md](qzone.md):
+### ☐ Add new enemies to [qzone.fgd](qzone.fgd):
 ☐ flyer
 
 ☐ headless
@@ -18,8 +23,12 @@ An attempt to create an FGD entity definition file for Qzone, a quake expansion 
 
 
 ### ☐ Make sure the nailgun replacement (slicer) works correctly
+### ☐ Create Test Maps
 ### ☐ Bugtest
 
 ## CREDITS:
+- Original mod created by WizardWorks
+- The uncredited mappers who made the original maps
 - ThatSpacePirate: Main developer
-- madfox: Helped decompile original QuakeC Source
+- Madfox: Helped decompile original QuakeC Source
+- [Librequake](https://github.com/lavenderdotpet/LibreQuake) for developer textures
