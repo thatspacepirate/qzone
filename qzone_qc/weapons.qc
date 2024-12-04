@@ -30,21 +30,28 @@ float() crandom =
 void() W_FireAxe =
 {
 	local vector source;
-	local float org_x;
-	local float org_y;
-	local float org_z;
+//	local float org_x;
+//	local float org_y;
+//	local float org_z;
+        local  vector org; //madfox
 
+        makevectors (self.v_angle); // madfox       
 	source = (self.origin + '0 0 16');
-	traceline(source, (source + (v_forward * IT_LIGHTNING)), FALSE, self);
-	if ((trace_fraction == SOLID_TRIGGER))
+//	traceline(source, (source + (v_forward * IT_LIGHTNING)), FALSE, self);
+	traceline (source, source + v_forward*64, FALSE, self);//madfox
+//if ((trace_fraction == SOLID_TRIGGER))
+	if ((trace_fraction == 1,0)) //madfox
 	{
 		return;
 	}
-	org_x = (trace_endpos - (v_forward * WEAPON_SPIKES));
+//	org_x = (trace_endpos - (v_forward * WEAPON_SPIKES));
+        org = trace_endpos - v_forward * 4;//madfox
 	if (trace_ent.takedamage)
 	{
-		trace_ent.axhitme = SOLID_TRIGGER;
-		SpawnBlood(org_x, VEC_ORIGIN, 20);
+//		trace_ent.axhitme = SOLID_TRIGGER;
+                trace_ent.axhitme = 1;//madfox
+//		SpawnBlood(org_x, VEC_ORIGIN, 20);
+                SpawnBlood(org, '0 0 0', 20);//madfox
 		T_Damage(trace_ent, self, self, 20);
 	}
 	else
@@ -144,18 +151,23 @@ void(entity hit, float damage) AddMultiDamage =
 
 void(float damage, vector dir) TraceAttack =
 {
-	local vector vel;
-	local float org_x;
-	local float org_y;
-	local float org_z;
+	local vector vel, org;
+//	local float org_x;
+//	local float org_y;
+//	local float org_z;
 
-	vel = normalize(((dir + (v_up * crandom())) + (v_right * crandom())));
-	vel = (vel + (TE_GUNSHOT * trace_plane_normal));
+//	vel = normalize(((dir + (v_up * crandom())) + (v_right * crandom())));
+	vel = normalize(dir + v_up *crandom() + v_right * crandom());//madfox
+//	vel = (vel + (TE_GUNSHOT * trace_plane_normal));
+	vel = vel + 2*trace_plane_normal;//madfox
 	vel = (vel * 200);
-	org_x = (trace_endpos - (dir * WEAPON_SPIKES));
+//	org_x = (trace_endpos - (dir * WEAPON_SPIKES));
+	org = trace_endpos - dir *4;//madfox
+
 	if (trace_ent.takedamage)
 	{
-		SpawnBlood(org_x, (vel * 0.2), damage);
+//		SpawnBlood(org_x, (vel * 0.2), damage);
+		SpawnBlood(org, (vel * 0.2), damage);//madfox
 		AddMultiDamage(trace_ent, damage);
 	}
 	else

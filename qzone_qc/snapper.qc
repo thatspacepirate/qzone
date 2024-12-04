@@ -2,34 +2,38 @@
 
 void() Snap_Touch =
 {
-	local float org_x;
-	local float org_y;
-	local float org_z;
+	local vector org;
 
-	if ((other == self.owner))
-	{
-		return;
-	}
-	if ((pointcontents(self.origin) == CONTENT_SKY))
+	if (other == self.owner)
+		return;		// don't explode on owner
+
+	if (pointcontents(self.origin) == CONTENT_SKY)
 	{
 		remove(self);
 		return;
 	}
-	org_x = (self.origin - (MOVETYPE_NOCLIP * normalize(self.velocity)));
+
+//MED 01/16/97 added silent command
+//   if (!(self.spawnflags & SPAWNFLAG_SILENT))
+      sound (self, CHAN_WEAPON, "enforcer/enfstop.wav", 1, ATTN_STATIC);
+	org = self.origin - 8*normalize(self.velocity);
+
 	if (other.health)
 	{
-		SpawnBlood(org_x, (self.velocity * 0.2), 15);
-		T_Damage(other, self, self.owner, MOVETYPE_BOUNCE);
+		SpawnBlood (org, self.velocity*0.2, 15);
+		T_Damage (other, self, self.owner, 15);
 	}
 	else
 	{
-		WriteByte(MSG_BROADCAST, SVC_TEMPENTITY);
-		WriteByte(MSG_BROADCAST, TE_GUNSHOT);
-		WriteCoord(MSG_BROADCAST, org_x);
-		WriteCoord(MSG_BROADCAST, org_y);
-		WriteCoord(MSG_BROADCAST, org_z);
+		WriteByte (MSG_BROADCAST, SVC_TEMPENTITY);
+		WriteByte (MSG_BROADCAST, TE_GUNSHOT);
+		WriteCoord (MSG_BROADCAST, org_x);
+		WriteCoord (MSG_BROADCAST, org_y);
+		WriteCoord (MSG_BROADCAST, org_z);
 	}
+
 	remove(self);
+
 };
 
 void(vector org, vector vec) SnapAttack =

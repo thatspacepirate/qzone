@@ -1,0 +1,9 @@
+This is a work_around for the QZone.qc.
+Remind I had to clip out some info.
+Mostly the org_x is a float, not a vector.
+For this reason it is not the original Qzone progs.dat.
+It is only for testing purpose.
+If you like you can use the original qc I extracted.
+This will not confirm a new progs.dat, only the errors there were.
+
+Madfox 2dec 2024.

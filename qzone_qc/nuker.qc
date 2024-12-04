@@ -412,7 +412,7 @@ void() nuker_die =
 	self.classname = "monster_nukermad";
 	self.frags = CHAN_VOICE;
 	self.origin = (self.origin + '0 0 41');
-	self.flags = (self.flags | FL_NUKER);
+//	self.flags = (self.flags | FL_NUKER);
 	monster_nukermad();
 	FoundTarget();
 	walkmonster_start_go();

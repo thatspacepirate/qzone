@@ -607,9 +607,9 @@ void() monster_nukermad =
 	{
 		nuker2_mad1();
 	}
-	if ((self.flags == (self.flags && FL_NUKER)))
-	{
-		nuker2_mad1();
-	}
+//	if ((self.flags == (self.flags && FL_NUKER)))
+//	{
+//		nuker2_mad1();
+//	}
 	walkmonster_start();
 };
