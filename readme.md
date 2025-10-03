@@ -30,5 +30,5 @@ Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more de
 - Original mod created by WizardWorks
 - The uncredited mappers who made the original maps
 - ThatSpacePirate: Main developer
-- Madfox: Helped decompile original QuakeC Source
+- Madfox: Helped decompile original QuakeC Source and extract textures
 - [Librequake](https://github.com/lavenderdotpet/LibreQuake) for developer textures

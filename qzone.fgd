@@ -4,9 +4,7 @@
 //
 // Original written by autolycus / autolycus@planetquake.com
 // Modified by CZG : grawert@online.no : http://www.planetquake.com/greyvoid/
-// further modified by various authors
-
-// Modified for creating maps in Qzone. NO CHANGES HAVE BEEN MADE YET.
+// Modified for creating maps in Qzone by ThatSpacePirate
 
 //
 // worldspawn
@@ -195,7 +193,7 @@
 @baseclass size(-16 -16 0, 16 16 56) color(0 0 200) base(Item, Appearflags) = Weapon []
 
 @PointClass base(Weapon) model({ "path": ":progs/g_shot.mdl" }) = weapon_supershotgun : "Double-barrelled shotgun" []
-@PointClass base(Weapon) model({ "path": ":progs/g_nail.mdl" }) = weapon_nailgun : "Nailgun" []
+@PointClass base(Weapon) model({ "path": ":progs/g_slicer.mdl" }) = weapon_slicer : "Slicer" []
 @PointClass base(Weapon) model({ "path": ":progs/g_nail2.mdl" }) = weapon_supernailgun : "Super nailgun" []
 @PointClass base(Weapon) model({ "path": ":progs/g_rock.mdl" }) = weapon_grenadelauncher : "Grenade launcher" []
 @PointClass base(Weapon) model({ "path": ":progs/g_rock2.mdl" }) = weapon_rocketlauncher : "Rocket launcher" []
@@ -229,6 +227,7 @@
 @PointClass base(Monster) size(-16 -16 -24, 16 16 24) model({ "path": ":progs/fish.mdl" }) = monster_fish : "Rotfish" []
 @PointClass base(Monster) size(-16 -16 -24, 16 16 32) model({ "path": ":progs/oldone.mdl" }) = monster_oldone : "Shub-Niggurath" []
 @PointClass base(Monster) size(-16 -16 -24, 16 16 32) model({ "path": ":progs/zombie.mdl" }) = monster_zombie : "Zombie"
+
 [
 	spawnflags(Flags) =
 	[
@@ -236,6 +235,16 @@
 		2 : "Ambush" : 0
 	]
 ]
+
+//syntax size(minX minY minZ, maxX maxY maxZ)
+
+// qzone enemies here:
+@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/flyer.mdl" }) = monster_flyer : "Flyer" []
+@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/headless.mdl" }) = monster_headless : "Headless" []
+@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/nuker.mdl" }) = monster_nuker : "Nuker" []
+@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/nuker2.mdl" }) = monster_nuker2 : "Nuker2" []
+@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/snapper.mdl" }) = monster_snapper : "Grunt" []
+
 
 //
 // lights
@@ -327,6 +336,8 @@
 	target(string) : "First stop target"
 	targetname(target_source) : "Name"
 ]
+@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/plane.mdl" }) = misc_monster_plane : "Passive Nuker Pilot" []
+
 @PointClass base(Appearflags, Targetname) color(220 150 150) = trap_spikeshooter : "Triggered shooter"
 [
 	spawnflags(Flags) =
@@ -375,7 +386,7 @@
 	speed(integer) : "Speed" : 100
 	sounds(choices) : "Sound" : 0 =
 	[
-        	0: "Silent"
+        0: "Silent"
 		1: "Stone"
 		2: "Machine"
 		3: "Stone Chain"
