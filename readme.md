@@ -11,15 +11,15 @@ Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more de
 ### ☐ Add new enemies to [qzone.fgd](qzone.fgd):
 ☐ flyer
 
-☐ headless
+✅ headless
 
-☐ nuker
+✅ nuker
 
-☐ nukermad
+✅ nukermad
 
-☐ plane
+✅ plane
 
-☐ snapper
+✅ snapper
 
 
 ### ☐ Make sure the nailgun replacement (slicer) works correctly
