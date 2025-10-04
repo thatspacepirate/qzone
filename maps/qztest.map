@@ -99,17 +99,17 @@
 }
 // entity 7
 {
-"classname" "weapon_slicer"
-"origin" "-208 -144 16"
-}
-// entity 8
-{
 "classname" "info_player_start"
 "origin" "-224 208 40"
 }
+// entity 8
+{
+"classname" "weapon_nailgun"
+"origin" "-208 -160 16"
+}
 // entity 9
 {
-"classname" "misc_monster_plane"
-"origin" "-96 -208 40"
+"classname" "monster_plane"
+"origin" "-96 -208 72"
 "angle" "90"
 }
