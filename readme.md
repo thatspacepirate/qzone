@@ -8,8 +8,8 @@ An attempt to create an FGD entity definition file for Qzone, a quake expansion 
 Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more details about the mod.
 
 ## TO DO:
-### ☐ Add new enemies to [qzone.fgd](qzone.fgd):
-☐ flyer
+### ✅ Add new enemies to [qzone.fgd](qzone.fgd):
+✅ flyer
 
 ✅ headless
 
@@ -22,9 +22,12 @@ Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more de
 ✅ snapper
 
 
-### ☐ Make sure the nailgun replacement (slicer) works correctly
+### ✅ Make sure the nailgun replacement (slicer) works correctly
 ### ☐ Create Test Maps
 ### ☐ Bugtest
+- Flyer spawns multiple enemies
+- Next weapon bind doesn't work
+- Snapper stays still unless player is on top of it, attacks are broken
 
 ## CREDITS:
 - Original mod created by WizardWorks
