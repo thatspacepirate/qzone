@@ -82,7 +82,7 @@
 }
 // entity 4
 {
-"classname" "monster_nuker2"
+"classname" "monster_nukermad"
 "origin" "208 -32 40"
 "angle" "180"
 }

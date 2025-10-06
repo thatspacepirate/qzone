@@ -134,7 +134,7 @@
             spawnflags & 1 ->   ":maps/b_nail1.bsp",
                                 ":maps/b_nail0.bsp"
         }}
-    ) = item_spikes : "Nailgun/Perforator ammo" []
+    ) = item_spikes : "Slicer/Perforator ammo" []
 
 @PointClass
     size(0 0 0, 32 32 56)
@@ -242,7 +242,7 @@
 @PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/flyer.mdl" }) = monster_flyer : "Flyer" []
 @PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/headless.mdl" }) = monster_headless : "Headless" []
 @PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/nuker.mdl" }) = monster_nuker : "Nuker" []
-@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/nuker2.mdl" }) = monster_nuker2 : "Nuker2" []
+@PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/nuker2.mdl" }) = monster_nukermad : "Nuker without weapon" []
 @PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/snapper.mdl" }) = monster_snapper : "Grunt" []
 @PointClass base(Monster) size(-16 -16 -24, 16 16 40) model({ "path": ":progs/plane.mdl" }) = monster_plane : "Passive Nuker" []
 
