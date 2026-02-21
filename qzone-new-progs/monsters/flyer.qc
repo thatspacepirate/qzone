@@ -363,6 +363,22 @@ void() monster_flyer =
 		remove(self);
 		return;
 	}
+
+	precache_model ("progs/flyer.mdl");
+
+	precache_sound ("slimatk1.wav");
+	precache_sound ("slimdie.wav");
+	precache_sound ("slimhap1.wav");
+	precache_sound ("slimhap2.wav");
+	precache_sound ("slimhap3.wav");
+	precache_sound ("slimhap4.wav");
+	precache_sound ("slimhap5.wav");
+	precache_sound ("slimhap6.wav");
+	precache_sound ("slimhap1.wav");
+	precache_sound ("slimhrt1.wav");
+	precache_sound ("slimhrt2.wav");
+	precache_sound ("slimsee.wav");
+
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/flyer.mdl");

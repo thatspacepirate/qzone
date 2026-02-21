@@ -598,8 +598,8 @@ void() weapon_supershotgun =
 
 void() weapon_nailgun =
 {
-	precache_model ("progs/g_nail.mdl");
-	setmodel (self, "progs/g_nail.mdl");
+	precache_model ("progs/g_slicer.mdl");
+	setmodel (self, "progs/g_slicer.mdl");
 	self.weapon = IT_NAILGUN;
 	self.netname = "Nailgun";
 	self.touch = weapon_touch;

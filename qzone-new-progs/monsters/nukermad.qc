@@ -591,6 +591,23 @@ void() monster_nukermad =
 		remove(self);
 		return;
 	}
+
+	
+	precache_model("progs/nuker2.mdl");
+	precache_model("progs/nukebase.mdl");
+	precache_model("progs/nukegun.mdl");
+	precache_model("progs/h_guard.mdl");
+	precache_model("progs/gib1.mdl");
+	precache_model("progs/gib2.mdl");
+	precache_model("progs/gib3.mdl");
+	precache_sound("soldier/death1.wav");
+	precache_sound("soldier/idle.wav");
+	precache_sound("soldier/pain1.wav");
+	precache_sound("soldier/pain2.wav");
+	precache_sound("soldier/sattck1.wav");
+	precache_sound("soldier/sight1.wav");
+	precache_sound("player/udeath.wav");
+	
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/nuker2.mdl");
@@ -611,6 +628,7 @@ void() monster_nukermad =
 //	{
 //		nuker2_mad1();
 //	}
+
 				//gnounc
 	self.noise = "nukesee.wav";	//gnounc
 	self.netname = "Nuker";

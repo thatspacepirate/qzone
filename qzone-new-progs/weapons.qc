@@ -429,34 +429,6 @@ void() W_FireRocket =
 QZONE - Slicer
 */
 
-void() W_FireSlicer =
-{
-	local entity missile;
-	local entity mpuff;
-
-	self.ammo_nails = (self.ammo_nails - ATTN_NORM);
-	self.currentammo = (self.ammo_nails - ATTN_NORM);
-	sound(self, CHAN_WEAPON, "lockload.wav", CHAN_WEAPON, ATTN_NORM);
-	self.punchangle_x = MSG_BROADCAST;
-	missile = spawn();
-	missile.owner = self;
-	missile.movetype = MOVETYPE_FLYMISSILE;
-	missile.frags = MSG_BROADCAST;
-	missile.solid = SOLID_BBOX;
-	makevectors(self.v_angle);
-	missile.avelocity_y = (random() * 2200);
-	missile.velocity = aim(self, 1000);
-	missile.velocity = (missile.velocity * 1700);
-	missile.angles = vectoangles(missile.velocity);
-	missile.touch = T_StarTouch;
-	missile.nextthink = (time + TE_LIGHTNING1);
-	missile.think = SUB_Remove;
-	self.attack_finished = (time + 0.64);
-	setmodel(missile, "progs/star.mdl");
-	setsize(missile, VEC_ORIGIN, VEC_ORIGIN);
-	setorigin(missile, ((self.origin + (v_forward * WEAPON_BIG)) + '0 0 16'));
-};
-
 void() T_StarTouch =
 {
 	local float damg;
@@ -510,6 +482,36 @@ void() T_StarTouch =
 	}
 	self.frags = (self.frags + ATTN_NORM);
 };
+
+void() W_FireSlicer =
+{
+	local entity missile;
+	local entity mpuff;
+
+	self.ammo_nails = (self.ammo_nails - ATTN_NORM);
+	self.currentammo = (self.ammo_nails - ATTN_NORM);
+	sound(self, CHAN_WEAPON, "lockload.wav", CHAN_WEAPON, ATTN_NORM);
+	self.punchangle_x = MSG_BROADCAST;
+	missile = spawn();
+	missile.owner = self;
+	missile.movetype = MOVETYPE_FLYMISSILE;
+	missile.frags = MSG_BROADCAST;
+	missile.solid = SOLID_BBOX;
+	makevectors(self.v_angle);
+	missile.avelocity_y = (random() * 2200);
+	missile.velocity = aim(self, 1000);
+	missile.velocity = (missile.velocity * 1700);
+	missile.angles = vectoangles(missile.velocity);
+	missile.touch = T_StarTouch;
+	missile.nextthink = (time + TE_LIGHTNING1);
+	missile.think = SUB_Remove;
+	self.attack_finished = (time + 0.64);
+	setmodel(missile, "progs/star.mdl");
+	setsize(missile, VEC_ORIGIN, VEC_ORIGIN);
+	setorigin(missile, ((self.origin + (v_forward * WEAPON_BIG)) + '0 0 16'));
+};
+
+
 
 /*
 ===============================================================================

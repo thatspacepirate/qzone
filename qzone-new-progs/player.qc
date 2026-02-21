@@ -202,7 +202,7 @@ void()	player_axed4 =	[$axattd4, player_run	] {self.weaponframe=8;};
 
 //============================================================================
 
-void() player_nail1   =[$nailatt1, player_nail2  ] 
+void() player_nail1   =[103, player_nail2  ] //disabled?
 {
 	self.effects = self.effects | EF_MUZZLEFLASH;
 
@@ -238,7 +238,7 @@ void() player_nail2   =[$nailatt2, player_nail1  ]
 
 // Slicer
 
-void() player_slicer = [ 103, player_slicer ]
+void() player_slicer = [ $nailatt1, player_slicer ]
 {
 	if (!self.button0)
 	{
