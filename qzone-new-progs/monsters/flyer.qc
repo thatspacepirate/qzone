@@ -375,6 +375,12 @@ void() monster_flyer =
 	self.th_melee = Flyer_MeleeAttack;
 	self.th_missile = flyer_jump1;
 	self.th_pain = flyer_pain;
+
+			//gnounc
+	self.noise = "slimsee.wav";	//gnounc
+	self.netname = "Flyer";
+	self.killstring = " got slimed by a Flyer\n";
+
 	walkmonster_start();
 };
 

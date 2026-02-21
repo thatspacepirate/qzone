@@ -582,5 +582,11 @@ void() monster_headless =
 	self.th_missile = head_attack;
 	self.th_pain = head_pain;
 	self.th_die = head_die;
+
+			//gnounc
+	self.noise = "soldier/sight1.wav";	//gnounc
+	self.netname = "Headless";
+	self.killstring = " loses their head to a Headless\n";
+
 	walkmonster_start();
 };

@@ -611,5 +611,9 @@ void() monster_nukermad =
 //	{
 //		nuker2_mad1();
 //	}
+				//gnounc
+	self.noise = "nukesee.wav";	//gnounc
+	self.netname = "Nuker";
+	self.killstring = " got torn apart by a Nuker\n";
 	walkmonster_start();
 };

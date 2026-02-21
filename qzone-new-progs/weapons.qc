@@ -457,6 +457,60 @@ void() W_FireSlicer =
 	setorigin(missile, ((self.origin + (v_forward * WEAPON_BIG)) + '0 0 16'));
 };
 
+void() T_StarTouch =
+{
+	local float damg;
+
+	if ((other == self.owner))
+	{
+		other.ammo_nails = (other.ammo_nails + TE_GUNSHOT);
+		remove(self);
+		return;
+	}
+	self.movetype = MOVETYPE_BOUNCE;
+	sound(self, CHAN_WEAPON, "slicer.wav", CHAN_WEAPON, ATTN_NORM);
+	if ((pointcontents(self.origin) == CONTENT_SKY))
+	{
+		remove(self);
+		return;
+	}
+	if ((self.frags == MSG_BROADCAST))
+	{
+		damg = 15;
+	}
+	if ((self.frags == ATTN_NORM))
+	{
+		damg = SVC_INTERMISSION;
+	}
+	if ((self.frags == TE_GUNSHOT))
+	{
+		damg = 35;
+	}
+	if ((self.frags == TE_EXPLOSION))
+	{
+		damg = 40;
+	}
+	if ((self.frags == WEAPON_SPIKES))
+	{
+		damg = 45;
+	}
+	if ((self.frags == TE_LIGHTNING1))
+	{
+		damg = 50;
+	}
+	if ((self.frags == MOVETYPE_TOSS))
+	{
+		damg = 15;
+		self.velocity = (self.velocity * MSG_BROADCAST);
+	}
+	if (other.health)
+	{
+		T_Damage(other, self, self.owner, damg);
+		self.velocity = (self.velocity * 0.5);
+	}
+	self.frags = (self.frags + ATTN_NORM);
+};
+
 /*
 ===============================================================================
 

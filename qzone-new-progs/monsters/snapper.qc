@@ -299,6 +299,12 @@ void() monster_snapper =
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/snapper.mdl");
+
+		//gnounc
+	self.noise = "snapmad1.wav";	//gnounc
+	self.netname = "Snapper";
+	self.killstring = " got chewed up by a Snapper\n";
+
 	setsize(self, VEC_HULL_MIN, '16 16 40');
 	self.health = 180;
 	self.th_stand = snap_stand1;

@@ -413,7 +413,7 @@ void() nuker_die =
 	self.frags = CHAN_VOICE;
 	self.origin = (self.origin + '0 0 41');
 //	self.flags = (self.flags | FL_NUKER);
-	monster_nukermad();
+	monster_nukermad(); //spawn nuker? ERROR
 	FoundTarget();
 	walkmonster_start_go();
 };
@@ -451,5 +451,10 @@ void() monster_nuker =
 	self.th_melee = nuker_atk1;
 	self.th_pain = nuker_pain;
 	self.th_die = nuker_die;
+
+			//gnounc
+	self.noise = "nukesee.wav";	//gnounc
+	self.netname = "Nuker";
+	self.killstring = " got torn apart by a Nuker\n";
 	walkmonster_start();
 };
