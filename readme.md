@@ -23,10 +23,10 @@ Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more de
 
 
 ### ✅ Make sure the nailgun replacement (slicer) works correctly
-### ☐ Create Test Maps
+### ✅ Create Test Maps
 ### ☐ Bugtest
-- Flyer spawns multiple enemies
-- Next weapon bind doesn't work
+- Game crashes when nuker fires a flier
+- Game crashes when nuker gibs
 - Snapper stays still unless player is on top of it, attacks are broken
 
 ## CREDITS:

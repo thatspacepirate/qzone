@@ -447,6 +447,7 @@ void() monster_nuker =
 	precache_model("progs/gib1.mdl");
 	precache_model("progs/gib2.mdl");
 	precache_model("progs/gib3.mdl");
+	precache_model("progs/flyer.mdl");
 	precache_sound("soldier/death1.wav");
 	precache_sound("soldier/idle.wav");
 	precache_sound("soldier/pain1.wav");

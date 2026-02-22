@@ -1,0 +1,17 @@
+---- vis / ericw-tools v0.18.1 ----
+running with 11 threads
+testlevel = 4
+LoadBSPFile: 'qztest-nuker.bsp'
+BSP is version 29
+     2 leafs
+     0 portals
+Calculating Base Vis:
+
+Calculating Full Vis:
+
+average leafs visible: 1
+c_noclip: 0
+c_chains: 0
+visdatasize:2  compressed from 2
+Writing qztest-nuker.bsp as BSP version 29
+  0.0 seconds elapsed

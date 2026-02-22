@@ -1,0 +1,42 @@
+---- light / ericw-tools v0.18.1 ----
+Dirtmap debugging enabled
+Raytracing backend: Embree
+running with 11 threads
+.lit colored light output requested on command line.
+LoadBSPFile: 'qztest-nuker.bsp'
+BSP is version 29
+--- LoadEntities ---
+5 entities read, 0 are lights.
+--- OptionsSummary ---
+    "dirt" was set to "1" from commandline
+    "minlight_dirt" was set to "1" from map
+    "sunlight_dirt" was set to "1.000000" from map
+    "sunlight2_dirt" was set to "1.000000" from map
+Embree_TraceInit: Embree version: 2.15.0
+Embree_TraceInit:
+	7 sky faces
+	45 solid faces
+	0 filtered faces
+	0 shadow-casting skip faces
+SetupLights: 0 initial lights
+SetupLights: 0 after surface lights
+SetupLights: 0 after jittering
+--- EstimateLightVisibility ---
+
+Final count: 0 lights 0 suns in use.
+--- SetupDirt ---
+       48 dirtmap vectors
+--- LightWorld ---
+0....1....2....3....4....5....6....7....8....9....
+Lighting Completed.
+
+lightdatasize: 6217
+Writing qztest-nuker.lit
+0 switchable light styles (32 max)
+Writing qztest-nuker.bsp as BSP version 29
+0.029 seconds elapsed
+
+stats:
+-1.#IND00 lights tested, -1.#IND00 hits per sample point
+-1.#IND00 bounce lights tested, -1.#IND00 hits per sample point
+0 empty lightmaps
