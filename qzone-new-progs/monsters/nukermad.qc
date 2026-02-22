@@ -619,6 +619,7 @@ void() monster_nukermad =
 	precache_sound("soldier/sattck1.wav");
 	precache_sound("soldier/sight1.wav");
 	precache_sound("player/udeath.wav");
+	precache_sound("demon/dhit2.wav");
 
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;

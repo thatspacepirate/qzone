@@ -27,6 +27,7 @@ Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more de
 ### ☐ Bugtest
 - Game crashes when nuker fires a flier
 - Game crashes when nuker gibs
+- Flyer has a missing precache, I'm unable to find it though
 - Snapper stays still unless player is on top of it, attacks are broken
 
 ## CREDITS:

@@ -79,12 +79,6 @@
 }
 // entity 4
 {
-"classname" "monster_plane"
-"origin" "-96 -208 72"
-"angle" "90"
-}
-// entity 5
-{
 "classname" "monster_snapper"
 "origin" "208 -192 40"
 "angle" "180"

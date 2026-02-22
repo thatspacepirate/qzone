@@ -296,6 +296,7 @@ void() monster_snapper =
 	precache_sound("snapmad2.wav");
 	precache_sound("snapatk1.wav");
 	precache_sound("snapatk2.wav");
+	precache_sound("enforcer/enfstop.wav");
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/snapper.mdl");

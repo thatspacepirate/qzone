@@ -3,7 +3,7 @@ Dirtmap debugging enabled
 Raytracing backend: Embree
 running with 11 threads
 .lit colored light output requested on command line.
-LoadBSPFile: 'qztest-nuker.bsp'
+LoadBSPFile: 'qztest-snapper.bsp'
 BSP is version 29
 --- LoadEntities ---
 5 entities read, 0 are lights.
@@ -31,9 +31,9 @@ Final count: 0 lights 0 suns in use.
 Lighting Completed.
 
 lightdatasize: 6217
-Writing qztest-nuker.lit
+Writing qztest-snapper.lit
 0 switchable light styles (32 max)
-Writing qztest-nuker.bsp as BSP version 29
+Writing qztest-snapper.bsp as BSP version 29
 0.029 seconds elapsed
 
 stats:
