@@ -1027,7 +1027,7 @@ void() W_Attack =
 
 	else if (self.weapon == IT_NAILGUN)
 	{
-		player_nail1 ();
+		player_slicer ();
 	}
 
 	else if (self.weapon == IT_SUPER_NAILGUN)

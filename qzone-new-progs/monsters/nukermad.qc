@@ -593,6 +593,18 @@ void() monster_nukermad =
 	}
 
 	
+	precache_sound("nukehap1.wav");
+	precache_sound("nukehap2.wav");
+	precache_sound("nukehrt1.wav");
+	precache_sound("nukehrt2.wav");
+	precache_sound("nukehrt3.wav");
+	precache_sound("nukemad1.wav");
+	precache_sound("nukemad2.wav");
+	precache_sound("nukemad3.wav");
+	precache_sound("nukegun.wav");
+	precache_sound("nukesee.wav");
+	precache_sound("nukedie1.wav");
+
 	precache_model("progs/nuker2.mdl");
 	precache_model("progs/nukebase.mdl");
 	precache_model("progs/nukegun.mdl");
@@ -607,7 +619,7 @@ void() monster_nukermad =
 	precache_sound("soldier/sattck1.wav");
 	precache_sound("soldier/sight1.wav");
 	precache_sound("player/udeath.wav");
-	
+
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/nuker2.mdl");

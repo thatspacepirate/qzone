@@ -1,0 +1,966 @@
+5
+ÄÅÅÅ_QZone_Start_ÅÅÅÅÇkills:__0/__0____
+4097.000000
+100.000000
+0.000000
+25.000000
+0.000000
+0.000000
+0.000000
+1.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+1
+start
+30.998938
+m
+mmnmmommommnonmmonqnmmo
+abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba
+mmmmmaaaaammmmmaaaaaabcdefgabcdefg
+mamamamamama
+jklmnopqrstuvwxyzyxwvutsrqponmlkj
+nmonqnmomnmomomno
+mmmaaaabcdefgmmmmaaaammmaamm
+mmmaaammmaaammmabcdefaaaammmmabcdefmmmaaaa
+aaaaaaaazzzzzzzz
+mmamammmmammamamaaamammma
+abcdefghijklmnopqrrqponmlkjihgfedcba
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+a
+{
+"self" "1"
+"other" "0"
+"world" "0"
+"time" "30.982265"
+"frametime" "0.016671"
+"force_retouch" "0.000000"
+"mapname" "start"
+"deathmatch" "0.000000"
+"coop" "0.000000"
+"teamplay" "0.000000"
+"serverflags" "0.000000"
+"total_secrets" "1.000000"
+"total_monsters" "0.000000"
+"found_secrets" "0.000000"
+"killed_monsters" "0.000000"
+"parm1" "4097.000000"
+"parm2" "100.000000"
+"parm3" "0.000000"
+"parm4" "25.000000"
+"parm5" "0.000000"
+"parm6" "0.000000"
+"parm7" "0.000000"
+"parm8" "1.000000"
+"parm9" "0.000000"
+"parm10" "0.000000"
+"parm11" "0.000000"
+"parm12" "0.000000"
+"parm13" "0.000000"
+"parm14" "0.000000"
+"parm15" "0.000000"
+"parm16" "0.000000"
+"trace_allsolid" "0.000000"
+"trace_startsolid" "0.000000"
+"trace_fraction" "0.000000"
+"trace_plane_dist" "0.000000"
+"trace_ent" "0"
+"trace_inopen" "0.000000"
+"trace_inwater" "0.000000"
+"msg_entity" "0"
+"movedist" "0.000000"
+"gameover" "0.000000"
+"string_null" ""
+"newmis" "0"
+"activator" "1"
+"damage_attacker" "0"
+"framecount" "1779.000000"
+"skill" "0.000000"
+"enemy_vis" "0.000000"
+"enemy_infront" "0.000000"
+"enemy_range" "0.000000"
+"enemy_yaw" "0.000000"
+"sight_entity" "0"
+"sight_entity_time" "0.000000"
+"multi_ent" "0"
+"multi_damage" "0.000000"
+"lastspawn" "0"
+"bodyqueue_head" "2"
+"modelindex_eyes" "29.000000"
+"modelindex_player" "28.000000"
+"intermission_running" "0.000000"
+"intermission_exittime" "0.000000"
+"nextmap" ""
+"s" "0"
+"le1" "0"
+"le2" "0"
+"lightning_end" "0.000000"
+"hknight_type" "0.000000"
+"shub" "0"
+}
+{ // #0
+"modelindex" "1.000000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "worldspawn"
+"model" "maps/start.bsp"
+"message" "ÄÅÅÅ QZone Start ÅÅÅÅÇ"
+"wad" "polish.wad"
+}
+{ // #1
+"modelindex" "28.000000"
+"absmin" "-64.553734 457.567932 7.031250"
+"absmax" "-30.553734 491.567932 65.031250"
+"movetype" "3.000000"
+"solid" "3.000000"
+"origin" "-47.553734 474.567932 32.031250"
+"oldorigin" "-47.614296 474.446899 32.031250"
+"velocity" "3.632789 7.259335 0.000000"
+"angles" "-15.267334 73.103027 0.099916"
+"classname" "player"
+"model" "progs/player.mdl"
+"frame" "10.000000"
+"mins" "-16.000000 -16.000000 -24.000000"
+"maxs" "16.000000 16.000000 32.000000"
+"size" "32.000000 32.000000 56.000000"
+"think" "player_run"
+"nextthink" "30.999151"
+"groundentity" "42"
+"health" "100.000000"
+"weapon" "1.000000"
+"weaponmodel" "progs/v_shot.mdl"
+"currentammo" "100.000000"
+"ammo_shells" "100.000000"
+"ammo_nails" "145.000000"
+"ammo_rockets" "100.000000"
+"ammo_cells" "200.000000"
+"items" "397695.000000"
+"takedamage" "2.000000"
+"view_ofs" "0.000000 0.000000 22.000000"
+"v_angle" "45.802002 73.103027 0.000000"
+"idealpitch" "-12.800000"
+"netname" "player"
+"flags" "4616.000000"
+"colormap" "1.000000"
+"team" "1.000000"
+"max_health" "100.000000"
+"watertype" "-1.000000"
+"th_pain" "player_pain"
+"th_die" "PlayerDie"
+"walkframe" "5.000000"
+"attack_finished" "26.639074"
+"show_hostile" "27.599073"
+"jump_flag" "-146.869446"
+"air_finished" "42.982265"
+"dmg" "2.000000"
+}
+{ // #2
+"absmin" "-1.000000 -1.000000 -1.000000"
+"absmax" "1.000000 1.000000 1.000000"
+"classname" "bodyqueue"
+"owner" "3"
+}
+{ // #3
+"absmin" "-1.000000 -1.000000 -1.000000"
+"absmax" "1.000000 1.000000 1.000000"
+"classname" "bodyqueue"
+"owner" "4"
+}
+{ // #4
+"absmin" "-1.000000 -1.000000 -1.000000"
+"absmax" "1.000000 1.000000 1.000000"
+"classname" "bodyqueue"
+"owner" "5"
+}
+{ // #5
+"absmin" "-1.000000 -1.000000 -1.000000"
+"absmax" "1.000000 1.000000 1.000000"
+"classname" "bodyqueue"
+"owner" "2"
+}
+{ // #6
+"absmin" "59.000000 -139.000000 39.000000"
+"absmax" "61.000000 -137.000000 41.000000"
+"origin" "60.000000 -138.000000 40.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_start"
+}
+{ // #7
+"absmin" "121.000000 -165.000000 28.000000"
+"absmax" "123.000000 -163.000000 30.000000"
+"origin" "122.000000 -164.000000 29.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_coop"
+}
+{ // #8
+"absmin" "147.000000 705.000000 4.000000"
+"absmax" "219.000000 710.000000 92.000000"
+"solid" "1.000000"
+"classname" "trigger_teleport"
+"mins" "148.000000 706.000000 5.000000"
+"maxs" "218.000000 709.000000 91.000000"
+"size" "70.000000 3.000000 86.000000"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+}
+{ // #9
+"absmin" "147.000000 705.000000 90.000000"
+"absmax" "219.000000 710.000000 117.000000"
+"solid" "1.000000"
+"classname" "trigger_teleport"
+"mins" "148.000000 706.000000 91.000000"
+"maxs" "218.000000 709.000000 116.000000"
+"size" "70.000000 3.000000 25.000000"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+}
+{ // #10
+"absmin" "27.000000 681.000000 -99.000000"
+"absmax" "98.000000 686.000000 -16.000000"
+"solid" "1.000000"
+"classname" "trigger_teleport"
+"mins" "28.000000 682.000000 -98.000000"
+"maxs" "97.000000 685.000000 -17.000000"
+"size" "69.000000 3.000000 81.000000"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+}
+{ // #11
+"absmin" "-85.000000 665.000000 91.000000"
+"absmax" "-3.000000 670.000000 195.000000"
+"solid" "1.000000"
+"classname" "trigger_teleport"
+"mins" "-84.000000 666.000000 92.000000"
+"maxs" "-4.000000 669.000000 194.000000"
+"size" "80.000000 3.000000 102.000000"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+}
+{ // #12
+"absmin" "-85.000000 665.000000 -156.000000"
+"absmax" "-5.000000 670.000000 -69.000000"
+"solid" "1.000000"
+"classname" "trigger_teleport"
+"mins" "-84.000000 666.000000 -155.000000"
+"maxs" "-6.000000 669.000000 -70.000000"
+"size" "78.000000 3.000000 85.000000"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+}
+{ // #13
+"absmin" "123.000000 -109.000000 28.000000"
+"absmax" "125.000000 -107.000000 30.000000"
+"origin" "124.000000 -108.000000 29.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_coop"
+}
+{ // #14
+"absmin" "-5.000000 -109.000000 28.000000"
+"absmax" "-3.000000 -107.000000 30.000000"
+"origin" "-4.000000 -108.000000 29.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_coop"
+}
+{ // #15
+"absmin" "-5.000000 -167.000000 28.000000"
+"absmax" "-3.000000 -165.000000 30.000000"
+"origin" "-4.000000 -166.000000 29.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_coop"
+}
+{ // #16
+"absmin" "-47.000000 280.000000 35.000000"
+"absmax" "-45.000000 282.000000 37.000000"
+"origin" "-46.000000 281.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #17
+"absmin" "134.000000 287.000000 35.000000"
+"absmax" "136.000000 289.000000 37.000000"
+"origin" "135.000000 288.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #18
+"absmin" "67.000000 113.000000 35.000000"
+"absmax" "69.000000 115.000000 37.000000"
+"origin" "68.000000 114.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #19
+"absmin" "57.000000 -70.000000 35.000000"
+"absmax" "59.000000 -68.000000 37.000000"
+"origin" "58.000000 -69.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #20
+"modelindex" "7.000000"
+"absmin" "-89.000000 503.000000 14.000000"
+"absmax" "1.000000 537.000000 25.000000"
+"ltime" "0.100000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "door"
+"model" "*6"
+"mins" "-88.000000 504.000000 15.000000"
+"maxs" "0.000000 536.000000 24.000000"
+"size" "88.000000 32.000000 9.000000"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "20"
+"targetname" "ss"
+"owner" "20"
+"movedir" "-1.000000 -0.000000 0.000000"
+"sounds" "4.000000"
+"noise1" "doors/ddoor2.wav"
+"noise2" "doors/ddoor1.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100.000000"
+"attack_finished" "30.949013"
+"wait" "3.000000"
+"noise4" "doors/meduse.wav"
+"dmg" "2.000000"
+"lip" "8.000000"
+"state" "1.000000"
+"pos2" "-80.000000 -0.000007 0.000000"
+}
+{ // #21
+"modelindex" "8.000000"
+"absmin" "-89.000000 535.000000 31.000000"
+"absmax" "1.000000 569.000000 41.000000"
+"ltime" "0.100000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "door"
+"model" "*7"
+"mins" "-88.000000 536.000000 32.000000"
+"maxs" "0.000000 568.000000 40.000000"
+"size" "88.000000 32.000000 8.000000"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "21"
+"targetname" "ss"
+"owner" "21"
+"movedir" "-1.000000 -0.000000 0.000000"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100.000000"
+"attack_finished" "31.165659"
+"wait" "3.000000"
+"noise4" "doors/meduse.wav"
+"dmg" "2.000000"
+"lip" "8.000000"
+"state" "1.000000"
+"pos2" "-80.000000 -0.000007 0.000000"
+}
+{ // #22
+"absmin" "127.000000 503.000000 -1.000000"
+"absmax" "241.000000 513.000000 113.000000"
+"solid" "1.000000"
+"classname" "trigger_setskill"
+"mins" "128.000000 504.000000 0.000000"
+"maxs" "240.000000 512.000000 112.000000"
+"size" "112.000000 8.000000 112.000000"
+"touch" "trigger_skill_touch"
+"message" "2"
+}
+{ // #23
+"absmin" "606.000000 86.000000 203.000000"
+"absmax" "608.000000 88.000000 205.000000"
+"origin" "607.000000 87.000000 204.000000"
+"classname" "info_teleport_destination"
+"targetname" "t1"
+}
+{ // #24
+"absmin" "591.000000 -288.000000 -2.000000"
+"absmax" "721.000000 -278.000000 273.000000"
+"solid" "1.000000"
+"classname" "trigger_changelevel"
+"mins" "592.000000 -287.000000 -1.000000"
+"maxs" "720.000000 -279.000000 272.000000"
+"size" "128.000000 8.000000 273.000000"
+"touch" "changelevel_touch"
+"netname" "changelevel"
+"map" "qz2m1"
+"killstring" " tried to leave
+"
+}
+{ // #25
+"absmin" "121.000000 -166.000000 35.000000"
+"absmax" "123.000000 -164.000000 37.000000"
+"origin" "122.000000 -165.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #26
+"absmin" "1045.000000 -2.000000 -1.000000"
+"absmax" "1055.000000 120.000000 273.000000"
+"solid" "1.000000"
+"classname" "trigger_changelevel"
+"mins" "1046.000000 -1.000000 0.000000"
+"maxs" "1054.000000 119.000000 272.000000"
+"size" "8.000000 120.000000 272.000000"
+"touch" "changelevel_touch"
+"netname" "changelevel"
+"map" "qz1m1"
+"killstring" " tried to leave
+"
+}
+{ // #27
+"absmin" "282.000000 6.000000 -17.000000"
+"absmax" "292.000000 119.000000 97.000000"
+"solid" "1.000000"
+"classname" "trigger_changelevel"
+"mins" "283.000000 7.000000 -16.000000"
+"maxs" "291.000000 118.000000 96.000000"
+"size" "8.000000 111.000000 112.000000"
+"touch" "changelevel_touch"
+"netname" "changelevel"
+"map" "qz3m1"
+"killstring" " tried to leave
+"
+}
+{ // #28
+"modelindex" "13.000000"
+"absmin" "-57.000000 447.000000 -91.999901"
+"absmax" "-31.000000 457.000000 7.000099"
+"ltime" "3.653204"
+"movetype" "7.000000"
+"solid" "4.000000"
+"origin" "0.000000 0.000000 -81.999901"
+"classname" "door"
+"model" "*12"
+"mins" "-56.000000 448.000000 -9.000000"
+"maxs" "-32.000000 456.000000 88.000000"
+"size" "24.000000 8.000000 97.000000"
+"touch" "door_touch"
+"use" "door_use"
+"think" "door_go_down"
+"blocked" "door_blocked"
+"nextthink" "6.486500"
+"enemy" "28"
+"targetname" "s0"
+"owner" "28"
+"movedir" "0.000000 0.000000 -1.000000"
+"sounds" "1.000000"
+"noise1" "doors/drclos4.wav"
+"noise2" "doors/doormv1.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100.000000"
+"attack_finished" "29.465681"
+"wait" "3.000000"
+"noise4" "doors/meduse.wav"
+"dmg" "2.000000"
+"think1" "door_hit_top"
+"finaldest" "0.000000 0.000000 -81.999901"
+"lip" "15.000100"
+"pos2" "0.000000 0.000000 -81.999901"
+}
+{ // #29
+"modelindex" "14.000000"
+"absmin" "-73.000000 471.000000 175.000000"
+"absmax" "-23.000000 481.000000 225.000000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "func_button"
+"model" "*13"
+"mins" "-72.000000 472.000000 176.000000"
+"maxs" "-24.000000 480.000000 224.000000"
+"size" "48.000000 8.000000 48.000000"
+"use" "button_use"
+"blocked" "button_blocked"
+"health" "1.000000"
+"takedamage" "1.000000"
+"max_health" "1.000000"
+"target" "ss"
+"movedir" "0.000000 -1.000000 0.000000"
+"sounds" "3.000000"
+"noise" "buttons/switch04.wav"
+"th_die" "button_killed"
+"speed" "40.000000"
+"wait" "5.000000"
+"lip" "4.000000"
+"state" "1.000000"
+"pos2" "0.000000 -4.000000 0.000000"
+}
+{ // #30
+"modelindex" "15.000000"
+"absmin" "47.000000 447.000000 -10.000000"
+"absmax" "73.000000 457.000000 97.000000"
+"ltime" "0.100000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "door"
+"model" "*14"
+"mins" "48.000000 448.000000 -9.000000"
+"maxs" "72.000000 456.000000 96.000000"
+"size" "24.000000 8.000000 105.000000"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "30"
+"targetname" "s1"
+"owner" "30"
+"movedir" "0.000000 0.000000 -1.000000"
+"sounds" "1.000000"
+"noise1" "doors/drclos4.wav"
+"noise2" "doors/doormv1.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100.000000"
+"wait" "3.000000"
+"noise4" "doors/meduse.wav"
+"dmg" "2.000000"
+"lip" "16.000099"
+"state" "1.000000"
+"pos2" "0.000000 0.000000 -88.999901"
+}
+{ // #31
+"modelindex" "16.000000"
+"absmin" "159.000000 447.000000 -10.000000"
+"absmax" "185.000000 457.000000 89.000000"
+"ltime" "0.100000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "door"
+"model" "*15"
+"mins" "160.000000 448.000000 -9.000000"
+"maxs" "184.000000 456.000000 88.000000"
+"size" "24.000000 8.000000 97.000000"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "31"
+"targetname" "s2"
+"owner" "31"
+"movedir" "0.000000 0.000000 -1.000000"
+"sounds" "1.000000"
+"noise1" "doors/drclos4.wav"
+"noise2" "doors/doormv1.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100.000000"
+"wait" "3.000000"
+"noise4" "doors/meduse.wav"
+"dmg" "2.000000"
+"lip" "15.000100"
+"state" "1.000000"
+"pos2" "0.000000 0.000000 -81.999901"
+}
+{ // #32
+"modelindex" "17.000000"
+"absmin" "-57.000000 637.583130 -163.000000"
+"absmax" "-31.000000 649.000000 -31.000000"
+"ltime" "0.100000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "door"
+"model" "*16"
+"mins" "-56.000000 638.583130 -162.000000"
+"maxs" "-32.000000 648.000000 -32.000000"
+"size" "24.000000 9.416870 130.000000"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "32"
+"owner" "32"
+"movedir" "0.000000 0.000000 -1.000000"
+"sounds" "1.000000"
+"noise1" "doors/drclos4.wav"
+"noise2" "doors/doormv1.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100.000000"
+"wait" "3.000000"
+"trigger_field" "51"
+"noise4" "doors/meduse.wav"
+"dmg" "2.000000"
+"lip" "6.000000"
+"state" "1.000000"
+"pos2" "0.000000 0.000000 -124.000000"
+}
+{ // #33
+"absmin" "639.000000 55.000000 4.000000"
+"absmax" "705.000000 113.000000 126.000000"
+"solid" "1.000000"
+"classname" "trigger_teleport"
+"mins" "640.000000 56.000000 5.000000"
+"maxs" "704.000000 112.000000 125.000000"
+"size" "64.000000 56.000000 120.000000"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t2"
+}
+{ // #34
+"absmin" "55.000000 -137.000000 39.000000"
+"absmax" "57.000000 -135.000000 41.000000"
+"origin" "56.000000 -136.000000 40.000000"
+"classname" "info_teleport_destination"
+"targetname" "t2"
+"mangle" "0.000000 90.000000 0.000000"
+}
+{ // #35
+"absmin" "-81.000000 503.000000 -50.000000"
+"absmax" "1.000000 553.000000 -39.000000"
+"solid" "1.000000"
+"classname" "trigger_secret"
+"mins" "-80.000000 504.000000 -49.000000"
+"maxs" "0.000000 552.000000 -40.000000"
+"size" "80.000000 48.000000 9.000000"
+"touch" "multi_touch"
+"use" "multi_use"
+"message" "You found a secret area!"
+"sounds" "1.000000"
+"noise" "misc/secret.wav"
+"wait" "-1.000000"
+}
+{ // #36
+"absmin" "-83.000000 597.000000 -162.000000"
+"absmax" "-9.000000 607.000000 -39.000000"
+"solid" "1.000000"
+"classname" "trigger_setskill"
+"mins" "-82.000000 598.000000 -161.000000"
+"maxs" "-10.000000 606.000000 -40.000000"
+"size" "72.000000 8.000000 121.000000"
+"touch" "trigger_skill_touch"
+"message" "3"
+}
+{ // #37
+"absmin" "-90.000000 519.000000 23.000000"
+"absmax" "1.000000 529.000000 145.000000"
+"solid" "1.000000"
+"classname" "trigger_setskill"
+"mins" "-89.000000 520.000000 24.000000"
+"maxs" "0.000000 528.000000 144.000000"
+"size" "89.000000 8.000000 120.000000"
+"touch" "trigger_skill_touch"
+"message" "0"
+}
+{ // #38
+"absmin" "31.000000 479.000000 -1.000000"
+"absmax" "97.000000 489.000000 81.000000"
+"solid" "1.000000"
+"classname" "trigger_setskill"
+"mins" "32.000000 480.000000 0.000000"
+"maxs" "96.000000 488.000000 80.000000"
+"size" "64.000000 8.000000 80.000000"
+"touch" "trigger_skill_touch"
+"message" "1"
+}
+{ // #39
+"absmin" "-65.000000 439.000000 -2.000000"
+"absmax" "-23.000000 457.000000 97.000000"
+"solid" "1.000000"
+"classname" "trigger_multiple"
+"mins" "-64.000000 440.000000 -1.000000"
+"maxs" "-24.000000 456.000000 96.000000"
+"size" "40.000000 16.000000 97.000000"
+"touch" "multi_touch"
+"use" "multi_use"
+"think" "multi_wait"
+"nextthink" "31.032234"
+"enemy" "1"
+"target" "s0"
+"wait" "0.200000"
+}
+{ // #40
+"absmin" "39.000000 439.000000 -2.000000"
+"absmax" "81.000000 457.000000 97.000000"
+"solid" "1.000000"
+"classname" "trigger_multiple"
+"mins" "40.000000 440.000000 -1.000000"
+"maxs" "80.000000 456.000000 96.000000"
+"size" "40.000000 16.000000 97.000000"
+"touch" "multi_touch"
+"use" "multi_use"
+"target" "s1"
+"wait" "0.200000"
+}
+{ // #41
+"absmin" "151.000000 439.000000 -2.000000"
+"absmax" "193.000000 457.000000 97.000000"
+"solid" "1.000000"
+"classname" "trigger_multiple"
+"mins" "152.000000 440.000000 -1.000000"
+"maxs" "192.000000 456.000000 96.000000"
+"size" "40.000000 16.000000 97.000000"
+"touch" "multi_touch"
+"use" "multi_use"
+"target" "s2"
+"wait" "0.200000"
+}
+{ // #42
+"modelindex" "26.000000"
+"absmin" "-89.000000 471.000000 -1.000000"
+"absmax" "1.000000 505.000000 9.000000"
+"ltime" "0.100000"
+"movetype" "7.000000"
+"solid" "4.000000"
+"classname" "door"
+"model" "*25"
+"mins" "-88.000000 472.000000 0.000000"
+"maxs" "0.000000 504.000000 8.000000"
+"size" "88.000000 32.000000 8.000000"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "42"
+"targetname" "ss"
+"owner" "42"
+"movedir" "-1.000000 -0.000000 0.000000"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100.000000"
+"attack_finished" "32.915844"
+"wait" "3.000000"
+"noise4" "doors/meduse.wav"
+"dmg" "2.000000"
+"lip" "8.000000"
+"state" "1.000000"
+"pos2" "-80.000000 -0.000007 0.000000"
+}
+{ // #43
+"modelindex" "57.000000"
+"absmin" "-233.000000 295.000000 -1.000000"
+"absmax" "-199.000000 329.000000 65.000000"
+"solid" "3.000000"
+"origin" "-216.000000 312.000000 24.000000"
+"angles" "0.000000 270.000000 0.000000"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "196.000000"
+"mins" "-16.000000 -16.000000 -24.000000"
+"maxs" "16.000000 16.000000 40.000000"
+"size" "32.000000 32.000000 64.000000"
+"think" "zombie_cruc6"
+"nextthink" "31.107100"
+"health" "60.000000"
+"netname" "zombie"
+"max_health" "60.000000"
+"spawnflags" "1.000000"
+"noise" "zombie/z_idle.wav"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+"killstring" " joins the Zombies
+"
+}
+{ // #44
+"absmin" "671.000000 83.000000 186.000000"
+"absmax" "673.000000 85.000000 188.000000"
+"origin" "672.000000 84.000000 187.000000"
+"classname" "info_player_start2"
+}
+{ // #45
+"modelindex" "57.000000"
+"absmin" "-569.000000 295.000000 -1.000000"
+"absmax" "-535.000000 329.000000 65.000000"
+"solid" "3.000000"
+"origin" "-552.000000 312.000000 24.000000"
+"angles" "0.000000 270.000000 0.000000"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "194.000000"
+"mins" "-16.000000 -16.000000 -24.000000"
+"maxs" "16.000000 16.000000 40.000000"
+"size" "32.000000 32.000000 64.000000"
+"think" "zombie_cruc4"
+"nextthink" "31.073843"
+"health" "60.000000"
+"netname" "zombie"
+"max_health" "60.000000"
+"spawnflags" "1.000000"
+"noise" "zombie/z_idle.wav"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+"killstring" " joins the Zombies
+"
+}
+{ // #46
+"absmin" "-393.000000 127.000000 95.000000"
+"absmax" "-391.000000 129.000000 97.000000"
+"origin" "-392.000000 128.000000 96.000000"
+"classname" "info_intermission"
+"mangle" "15.000000 90.000000 0.000000"
+}
+{ // #47
+"absmin" "121.000000 -110.000000 35.000000"
+"absmax" "123.000000 -108.000000 37.000000"
+"origin" "122.000000 -109.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #48
+"absmin" "-7.000000 -110.000000 35.000000"
+"absmax" "-5.000000 -108.000000 37.000000"
+"origin" "-6.000000 -109.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #49
+"absmin" "-7.000000 -166.000000 35.000000"
+"absmax" "-5.000000 -164.000000 37.000000"
+"origin" "-6.000000 -165.000000 36.000000"
+"angles" "0.000000 90.000000 0.000000"
+"classname" "info_player_deathmatch"
+}
+{ // #50
+"absmin" "592.000000 476.000000 1.000000"
+"absmax" "721.000000 487.000000 161.000000"
+"solid" "1.000000"
+"classname" "trigger_changelevel"
+"mins" "593.000000 477.000000 2.000000"
+"maxs" "720.000000 486.000000 160.000000"
+"size" "127.000000 9.000000 158.000000"
+"touch" "changelevel_touch"
+"netname" "changelevel"
+"map" "qzdm1  "
+"killstring" " tried to leave
+"
+}
+{ // #51
+"absmin" "-117.000000 577.583130 -171.000000"
+"absmax" "29.000000 709.000000 -23.000000"
+"solid" "1.000000"
+"mins" "-116.000000 578.583130 -170.000000"
+"maxs" "28.000000 708.000000 -24.000000"
+"size" "144.000000 129.416870 146.000000"
+"touch" "door_trigger_touch"
+"owner" "32"
+}
+{ // #52
+}
+{ // #53
+}
+{ // #54
+}
+{ // #55
+}
+{ // #56
+}
+{ // #57
+}
+{ // #58
+}
+{ // #59
+}
+{ // #60
+}
+{ // #61
+}
+{ // #62
+}
+{ // #63
+}
+{ // #64
+}
+{ // #65
+"modelindex" "48.000000"
+"absmin" "-27.052988 560.925537 -0.968750"
+"absmax" "-25.052988 562.925537 1.031250"
+"movetype" "10.000000"
+"solid" "2.000000"
+"origin" "-26.052988 561.925537 0.031250"
+"angles" "356.000000 1194.825317 0.000000"
+"model" "progs/star.mdl"
+"touch" "T_StarTouch"
+"think" "SUB_Remove"
+"nextthink" "31.449062"
+"frags" "4.000000"
+"flags" "512.000000"
+"waterlevel" "-1.000000"
+"watertype" "-1.000000"
+"owner" "1"
+}
+{ // #66
+}
+{ // #67
+}
+{ // #68
+}
+{ // #69
+}
+{ // #70
+}
+{ // #71
+}
+{ // #72
+}
+// 73 edicts
