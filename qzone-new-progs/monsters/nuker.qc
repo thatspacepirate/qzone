@@ -456,6 +456,9 @@ void() monster_nuker =
 	precache_sound("soldier/sight1.wav");
 	precache_sound("player/udeath.wav");
 
+	//flyer precache
+	precache_model ("progs/flyer.mdl");
+
 	precache_sound ("slimatk1.wav");
 	precache_sound ("slimdie.wav");
 	precache_sound ("slimhap1.wav");
@@ -468,6 +471,8 @@ void() monster_nuker =
 	precache_sound ("slimhrt1.wav");
 	precache_sound ("slimhrt2.wav");
 	precache_sound ("slimsee.wav");
+
+	
 
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
