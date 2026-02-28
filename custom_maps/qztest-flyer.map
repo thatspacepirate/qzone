@@ -3,7 +3,7 @@
 // entity 0
 {
 "mapversion" "220"
-"wad" "U:\QuakeDev\Mods\qzone\texture_wads\qzone.wad;U:\QuakeDev\Mods\qzone\texture_wads\lq_dev.wad"
+"wad" "..\texture_wads\lq_dev.wad;..\texture_wads\qzone.wad"
 "classname" "worldspawn"
 "_tb_mod" "qzone"
 "_tb_def" "external:U:/QuakeDev/Mods/qzone/qzone.fgd"
