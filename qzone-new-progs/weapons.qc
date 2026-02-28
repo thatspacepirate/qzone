@@ -570,6 +570,43 @@ void(vector p1, vector p2, entity from, float damage) LightningDamage =
 		T_Damage (trace_ent, from, from, damage);
 	}
 };
+// added here
+void(vector start_pos, vector bolt_dir, float spawn_num) LightningBounce =
+{
+	local entity tempent;
+	local vector old_endpos;
+
+	if ((spawn_num < ATTN_NORM))
+	{
+		return;
+	}
+	tempent = spawn();
+	tempent.origin = start_pos;
+	setorigin(tempent, start_pos);
+	setmodel(tempent, "progs/grenade.mdl");
+	tempent.v_angle = bolt_dir;
+	tempent.angles = vectoangles(tempent.v_angle);
+	traceline(start_pos, (start_pos + (bolt_dir * 300)), FALSE, self);
+	old_endpos = (trace_endpos + (bolt_dir * WEAPON_SPIKES));
+	bolt_dir_x = (bolt_dir_x * (((FALSE - SOLID_BBOX) * fabs(trace_plane_normal_x)) + ATTN_NORM));
+	bolt_dir_y = (bolt_dir_y * (((FALSE - SOLID_BBOX) * fabs(trace_plane_normal_y)) + ATTN_NORM));
+	bolt_dir_z = (bolt_dir_z * (((FALSE - SOLID_BBOX) * fabs(trace_plane_normal_z)) + ATTN_NORM));
+	WriteByte(MSG_BROADCAST, SVC_TEMPENTITY);
+	WriteByte(MSG_BROADCAST, TE_LIGHTNING2);
+	WriteEntity(MSG_BROADCAST, tempent);
+	WriteCoord(MSG_BROADCAST, start_pos_x);
+	WriteCoord(MSG_BROADCAST, start_pos_y);
+	WriteCoord(MSG_BROADCAST, start_pos_z);
+	WriteCoord(MSG_BROADCAST, trace_endpos_x);
+	WriteCoord(MSG_BROADCAST, trace_endpos_y);
+	WriteCoord(MSG_BROADCAST, trace_endpos_z);
+	LightningDamage(start_pos, trace_endpos, self, SVC_INTERMISSION);
+	bolt_dir_x = (bolt_dir_x + (0.05 * crandom()));
+	bolt_dir_y = (bolt_dir_y + (0.05 * crandom()));
+	bolt_dir_z = (bolt_dir_z + (0.05 * crandom()));
+	LightningBounce(old_endpos, bolt_dir, (spawn_num - ATTN_NORM));
+	remove(tempent);
+};
 
 
 void() W_FireLightning =
@@ -603,7 +640,13 @@ void() W_FireLightning =
 	self.punchangle_x = -2;
 	self.currentammo = self.ammo_cells = self.ammo_cells - 1;
 	org = self.origin + '0 0 16';
-	
+
+	makevectors(self.v_angle);
+	if ((((self.ammo_cells / SOLID_BBOX) == floor((self.ammo_cells / SOLID_BBOX))) || (self.attack_finished < time)))
+	{
+		LightningBounce(self.origin, v_forward, TE_EXPLOSION);
+	}
+	/* commented out to match qzone progs
 	traceline (org, org + v_forward*600, TRUE, self);
 
 	WriteByte (MSG_BROADCAST, SVC_TEMPENTITY);
@@ -617,6 +660,7 @@ void() W_FireLightning =
 	WriteCoord (MSG_BROADCAST, trace_endpos_z);
 
 	LightningDamage (self.origin, trace_endpos + v_forward*4, self, 30);
+	*/
 };
 
 
