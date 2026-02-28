@@ -364,6 +364,8 @@ void() monster_flyer =
 		return;
 	}
 
+	/* Moving to worldspawn
+
 	precache_model ("progs/flyer.mdl");
 
 	precache_sound ("slimatk1.wav");
@@ -378,7 +380,7 @@ void() monster_flyer =
 	precache_sound ("slimhrt1.wav");
 	precache_sound ("slimhrt2.wav");
 	precache_sound ("slimsee.wav");
-
+	*/
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/flyer.mdl");

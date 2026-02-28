@@ -3,7 +3,7 @@
 # QZONE FGD PROJECT
 ---
 
-An attempt to create an FGD entity definition file for Qzone, a quake expansion sold in the 90s by the now defunct WizardWorks Group, Inc. This expansion adds new enemies and weapon replacements to the original Quake. I'm working on this project so that modders can create maps for the mod, and to make it easier for the entities unique to Qzone to be used in other mods.
+An attempt to create an FGD entity definition file + a quakec recompilation for Qzone, a quake expansion sold in the 90s by the now defunct WizardWorks Group, Inc. This expansion adds new enemies and weapon replacements to the original Quake. I'm working on this project so that modders can create maps for the mod, and to make it easier for the entities unique to Qzone to be used in other mods.
 
 Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more details about the mod.
 
@@ -24,11 +24,8 @@ Read [QZONE.TXT](QZONE.TXT), the original readme included in the CD, for more de
 
 ### ✅ Make sure the nailgun replacement (slicer) works correctly
 ### ✅ Create Test Maps
-### ☐ Bugtest
-- Game crashes when nuker fires a flier
-- Game crashes when nuker gibs
-- Flyer has a missing precache, I'm unable to find it though
-- Snapper stays still unless player is on top of it, attacks are broken
+### ✅ Bugtest
+### ✅ Create final release
 
 ## CREDITS:
 - Original mod created by WizardWorks

@@ -427,6 +427,14 @@ void() monster_nuker =
 		remove(self);
 		return;
 	}
+	precache_model("progs/nuker.mdl");
+	precache_model("progs/nukebase.mdl");
+	precache_model("progs/nukegun.mdl");
+	precache_model("progs/h_guard.mdl");
+	precache_model("progs/gib1.mdl");
+	precache_model("progs/gib2.mdl");
+	precache_model("progs/gib3.mdl");
+	precache_model("progs/flyer.mdl");
 
 	precache_sound("nukehap1.wav");
 	precache_sound("nukehap2.wav");
@@ -439,40 +447,15 @@ void() monster_nuker =
 	precache_sound("nukegun.wav");
 	precache_sound("nukesee.wav");
 	precache_sound("nukedie1.wav");
-
-	precache_model("progs/nuker.mdl");
-	precache_model("progs/nukebase.mdl");
-	precache_model("progs/nukegun.mdl");
-	precache_model("progs/h_guard.mdl");
-	precache_model("progs/gib1.mdl");
-	precache_model("progs/gib2.mdl");
-	precache_model("progs/gib3.mdl");
-	precache_model("progs/flyer.mdl");
 	precache_sound("soldier/death1.wav");
 	precache_sound("soldier/idle.wav");
 	precache_sound("soldier/pain1.wav");
 	precache_sound("soldier/pain2.wav");
 	precache_sound("soldier/sattck1.wav");
 	precache_sound("soldier/sight1.wav");
-	precache_sound("player/udeath.wav");
+	precache_sound("player/udeath.wav");	
 
-	//flyer precache
-	precache_model ("progs/flyer.mdl");
 
-	precache_sound ("slimatk1.wav");
-	precache_sound ("slimdie.wav");
-	precache_sound ("slimhap1.wav");
-	precache_sound ("slimhap2.wav");
-	precache_sound ("slimhap3.wav");
-	precache_sound ("slimhap4.wav");
-	precache_sound ("slimhap5.wav");
-	precache_sound ("slimhap6.wav");
-	precache_sound ("slimhap1.wav");
-	precache_sound ("slimhrt1.wav");
-	precache_sound ("slimhrt2.wav");
-	precache_sound ("slimsee.wav");
-
-	
 
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;

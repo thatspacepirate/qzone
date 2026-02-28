@@ -592,7 +592,7 @@ void() monster_nukermad =
 		return;
 	}
 
-	
+	/* moving to worldspawn
 	precache_sound("nukehap1.wav");
 	precache_sound("nukehap2.wav");
 	precache_sound("nukehrt1.wav");
@@ -620,7 +620,7 @@ void() monster_nukermad =
 	precache_sound("soldier/sight1.wav");
 	precache_sound("player/udeath.wav");
 	precache_sound("demon/dhit2.wav");
-
+	*/
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/nuker2.mdl");
