@@ -69,6 +69,14 @@ void() plane_die =
 
 void() monster_plane =
 {
+		if (deathmatch)
+	{
+		remove(self);
+		return;
+	}
+
+
+
 	precache_model2("progs/plane.mdl");
 
 	precache_sound("nukehap1.wav");
@@ -86,6 +94,12 @@ void() monster_plane =
 	self.solid = SOLID_SLIDEBOX;
 	self.movetype = MOVETYPE_STEP;
 	setmodel(self, "progs/plane.mdl");
+
+		//gnounc
+	self.netname = "plane";
+	self.killstring = " somehow was killed by a sitting nuker\n";
+	self.noise = "nukesee.wav";	//gnounc
+
 	setsize(self, '-8 -8 -24', '8 8 40');
 	self.health = 100;
 	self.th_stand = pnap_stand1;
