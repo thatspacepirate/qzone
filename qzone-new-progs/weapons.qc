@@ -488,6 +488,13 @@ void() W_FireSlicer =
 	local entity missile;
 	local entity mpuff;
 
+	if (self.ammo_nails < 1) //fix for ammo running out
+	{
+		self.weapon = W_BestWeapon ();
+		W_SetCurrentAmmo ();
+		return;
+	}
+
 	self.ammo_nails = (self.ammo_nails - ATTN_NORM);
 	self.currentammo = (self.ammo_nails - ATTN_NORM);
 	sound(self, CHAN_WEAPON, "lockload.wav", CHAN_WEAPON, ATTN_NORM);
